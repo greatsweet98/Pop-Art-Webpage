@@ -1,0 +1,432 @@
+.popbackground {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url(https://i.pinimg.com/736x/56/03/aa/5603aa8c3dbe768248f5019c2709e85c.jpg);
+  filter: brightness(0.625);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+* {
+    margin: 5;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #ff6a00;
+  border-radius: 7.5px;
+  background: url(https://media.istockphoto.com/id/941893050/photo/colorful-oil-painting-on-canvas-texture.jpg?s=612x612&w=0&k=20&c=d9dX3jxTigx7PsmMuNnIMwnok-mT23kjjKAiapLAljk=);
+  background-size: cover;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #176a00;
+  font-family: 'Karla', serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #176a00;
+  text-shadow: 0 0 15px #176a00;
+  transform: translateY(-2px);
+  transition: color 0.3 ease;
+}
+
+.nav-links a.active {
+  color: #5d3000;         
+  font-weight: bold;
+  border-bottom: 2px solid #5d3000;
+}
+
+.animatedtitle {
+      font-size: 50px;
+      font-weight: bold;
+      animation: bounce 1.5s infinite ease-in-out;
+      color: rgb(55, 0, 255);
+      text-shadow: 0 0 5px rgb(192, 174, 255), 0 0 10px rgb(192, 174, 255), 0 0 20px rgb(192, 174, 255), 0 0 40px rgb(192, 174, 255);
+      text-align: center;
+      font-family: 'Quicksand', italic, serif;
+      font-style: italic;
+}
+
+.animatedtitle2 {
+      font-size: 45px;
+      font-weight: bold;
+      color: rgb(22, 220, 0);
+      text-shadow: 0 0 5px rgb(224, 255, 240), 0 0 10px rgb(224, 255, 240), 0 0 20px rgb(224, 255, 240), 0 0 40px rgb(224, 255, 240);
+      text-align: center;
+      font-family: 'VT323', italic, serif;
+      font-style: italic;
+}
+
+.animatedtitle2 span {
+      display: inline-block;
+      animation: wave 1.6s ease-in-out infinite;
+}
+
+.animatedtitle2 span:nth-child(1) { animation-delay: 0s; }
+.animatedtitle2 span:nth-child(2) { animation-delay: 0.1s; }
+.animatedtitle2 span:nth-child(3) { animation-delay: 0.2s; }
+.animatedtitle2 span:nth-child(4) { animation-delay: 0.3s; }
+.animatedtitle2 span:nth-child(5) { animation-delay: 0.4s; }
+.animatedtitle2 span:nth-child(6) { animation-delay: 0.5s; }
+.animatedtitle2 span:nth-child(7) { animation-delay: 0.6s; }
+.animatedtitle2 span:nth-child(8) { animation-delay: 0.7s; }
+.animatedtitle2 span:nth-child(9) { animation-delay: 0.8s; }
+
+.inanimatedtitle {
+      color: #ff0000;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      font-family: 'Josefin Sans', sans-serif;
+}
+
+.articletext {
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  color: #ffea00;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.homeheaderpic-container {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.homeheaderpic-container>div img {
+  width: 550px;
+  height: auto;
+  padding: 1px;
+}
+
+.citationlist {
+  background: url(https://static01.nyt.com/images/2021/02/12/t-magazine/12tmag-abstract-slide-HY3F/12tmag-abstract-slide-HY3F-articleLarge.jpg?quality=75&auto=webp&disable=upscale);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#referenceheader {
+  font-size: 30px;
+  font-family: 'Domine', serif;
+}
+
+.citationlist>div {
+  font-size: 12.5px;
+  color: #ffffff;
+  padding: 10px 10px;
+  text-align: left;
+  font-family: 'Karla', sans-serif;
+}
+
+.designtrendlist {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,1)), url(https://img.freepik.com/free-vector/gradient-cyber-futuristic-background_23-2149117429.jpg?semt=ais_hybrid&w=740&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.designtrendlist>div {
+  font-family:'Nunito', sans-serif;
+  margin: 10px auto;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.00001), rgba(0,0,0,0.75)), url(https://www.shutterstock.com/shutterstock/videos/1107538677/thumb/1.jpg?ip=x480);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(0, 255, 255);
+  width: 298px;
+  margin: 6px;
+  text-align: center;
+  padding: 15px;
+}
+
+.designtrend p {
+  font-family: 'Source Code Pro', monospace;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.designtrend:hover {
+  transform: translateX(2px) translateY(-2px);
+  box-shadow: -3px 3px 10px rgb(154, 255, 255);
+}
+
+.designtrend img {
+  width: 200px;
+  height: auto;
+}
+
+.colorschemelist {
+  background: url(https://t4.ftcdn.net/jpg/07/15/46/61/360_F_715466186_xpLznUuqiA5ASGG9DcxaxPcdkN6RfTl3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.colorschemelist>div {
+  font-family:'Lobster Two', sans-serif;
+  margin: 10px auto;
+  background: url(https://images.unsplash.com/photo-1533158388470-9a56699990c6?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YWJzdHJhY3QlMjBhcnR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  width: 298px;
+  margin: 6px;
+  text-align: center;
+  padding: 15px;
+}
+
+.colorscheme p {
+  font-family: 'Arima', system-ui;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.colorscheme:hover {
+  transform: translateX(2px) translateY(-2px);
+  box-shadow: -3px 3px 10px rgb(255, 254, 169);
+}
+
+.colorscheme img {
+  width: 200px;
+  height: auto;
+}
+
+.typographylist {
+  background: url(https://png.pngtree.com/background/20210712/original/pngtree-blueprint-digital-paper-background-design-super-high-resolution-picture-image_1178711.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.typographylist>div {
+  font-family:'Ubuntu', sans-serif;
+  margin: 10px auto;
+  background: url(https://img.freepik.com/premium-photo/textured-digital-paper-background_1108533-14274.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  width: 298px;
+  margin: 6px;
+  text-align: center;
+  padding: 15px;
+}
+
+.typography p {
+  font-family: 'Inconsolata', monospace;
+  text-align: justify;
+  font-size: 12px;
+}
+
+.typography:hover {
+  transform: translateX(2px) translateY(-2px);
+  box-shadow: -3px 3px 10px rgb(255, 125, 125);
+}
+
+.typography img {
+  width: 200px;
+  height: auto;
+}
+
+.layoutinnovlist {
+  display: grid;                          /* activates grid */
+  grid-template-columns: repeat(3, 1fr);  /* 2 equal columns */
+  grid-template-rows: auto auto;          /* 2 rows */
+  gap: 10px;                              /* spacing between boxes */
+  padding: 15px;
+}
+
+.layoutinnov {
+  display: grid;
+  color: #ff38ca;
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  text-shadow: 3px 3px 4px rgb(0, 0, 0);
+  padding: 50px;
+  text-align: center;
+  border: 1.5px solid #61adec;
+  border-radius: 2px;
+  align-items: end;
+  box-shadow: -3px 3px 4px rgb(0, 0, 0);
+}
+
+#Bauhaus {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://www.shutterstock.com/image-illustration/minimalistic-geometric-pattern-bauhaus-style-600nw-2608899069.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+#Modernism {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://inkbotdesign.com/wp-content/uploads/2023/06/what-is-modernism-in-graphic-design-1024x640.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#ArtDeco {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://designshack.net/wp-content/uploads/Free-Golden-Art-Deco-Background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column: 1;
+  grid-row: 4 / 2;
+}
+
+#PopArtDesign {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://images-platform.99static.com//siQfd_Al018UI6k2Su6DtE0ONpo=/0x492:4500x4992/fit-in/590x590/projects-files/75/7503/750318/de632ddc-4e7d-4bf6-955d-67342378a580.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#SwissStyle {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://miro.medium.com/v2/resize:fit:1200/0*Ebi0O05keYkFJccq.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#Minimalism {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://brandripe.com/storage/article/image%201_1633514809.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+
+#Psychedelism {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1)), url(https://f.hubspotusercontent10.net/hubfs/3837363/psychedelic-design-doors-concert-bonnie-maclean.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column: 1 / 4;
+  grid-row: 4;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-20px); }
+  60% { transform: translateY(-10px); }
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.usercontactinfolist {
+  background: url("https://www.creativefabrica.com/wp-content/uploads/2021/07/12/Dark-wood-texture-Graphics-14584990-1-1-580x386.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(1.1);
+}
+
+.usercontactinfolist>div {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 12.5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1230px;
+  height: 30px;
+  text-align: center;
+  padding: 7.5px;
+  filter: brightness(0.9);
+}
+
+.socials img {
+  width: 13.75px;
+  height: auto;
+}
+
+#tagline {
+  text-align: center;
+  color: rgb(255, 157, 0);
+  text-shadow: 2px 2px 5px #000000;
+}
+
+@media (max-width: 5in) {
+  .nav-links {
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: flex;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .homeheaderpic-container {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  }
+
+  .homeheaderpic-container>div img {
+  width: 200px;
+  height: auto;
+  padding: 1px;
+  }
+}
